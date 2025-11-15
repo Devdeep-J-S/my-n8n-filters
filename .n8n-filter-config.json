@@ -1,13 +1,7 @@
-{
-  "include": [
-    "critical",
-    "(deploy|release)",
-    "incident"
-  ],
-  "exclude": [
-    "\\[AuthContextSetFailed\\]",
-    "(debug|trace)",
-    "heartbeat",
-    "test"
-  ]
-}
+[
+  {
+    "include": [".*"],
+    "exclude": ["^\\[AuthContextSetFailed\\]"]
+  }
+]
+
